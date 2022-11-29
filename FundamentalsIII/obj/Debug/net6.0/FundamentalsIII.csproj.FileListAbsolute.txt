@@ -1,0 +1,15 @@
+C:\Users\Coding Dojo\Desktop\csharp\FundamentalsIII\bin\Debug\net6.0\FundamentalsIII.exe
+C:\Users\Coding Dojo\Desktop\csharp\FundamentalsIII\bin\Debug\net6.0\FundamentalsIII.deps.json
+C:\Users\Coding Dojo\Desktop\csharp\FundamentalsIII\bin\Debug\net6.0\FundamentalsIII.runtimeconfig.json
+C:\Users\Coding Dojo\Desktop\csharp\FundamentalsIII\bin\Debug\net6.0\FundamentalsIII.dll
+C:\Users\Coding Dojo\Desktop\csharp\FundamentalsIII\bin\Debug\net6.0\FundamentalsIII.pdb
+C:\Users\Coding Dojo\Desktop\csharp\FundamentalsIII\obj\Debug\net6.0\FundamentalsIII.csproj.AssemblyReference.cache
+C:\Users\Coding Dojo\Desktop\csharp\FundamentalsIII\obj\Debug\net6.0\FundamentalsIII.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coding Dojo\Desktop\csharp\FundamentalsIII\obj\Debug\net6.0\FundamentalsIII.AssemblyInfoInputs.cache
+C:\Users\Coding Dojo\Desktop\csharp\FundamentalsIII\obj\Debug\net6.0\FundamentalsIII.AssemblyInfo.cs
+C:\Users\Coding Dojo\Desktop\csharp\FundamentalsIII\obj\Debug\net6.0\FundamentalsIII.csproj.CoreCompileInputs.cache
+C:\Users\Coding Dojo\Desktop\csharp\FundamentalsIII\obj\Debug\net6.0\FundamentalsIII.dll
+C:\Users\Coding Dojo\Desktop\csharp\FundamentalsIII\obj\Debug\net6.0\refint\FundamentalsIII.dll
+C:\Users\Coding Dojo\Desktop\csharp\FundamentalsIII\obj\Debug\net6.0\FundamentalsIII.pdb
+C:\Users\Coding Dojo\Desktop\csharp\FundamentalsIII\obj\Debug\net6.0\FundamentalsIII.genruntimeconfig.cache
+C:\Users\Coding Dojo\Desktop\csharp\FundamentalsIII\obj\Debug\net6.0\ref\FundamentalsIII.dll
