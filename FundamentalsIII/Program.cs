@@ -9,6 +9,8 @@ static void PrintList(List<string> MyList)
         Console.WriteLine(MyList[i]);
     }
 }
+List<string> NamesList = new List<string>() {"Julie", "Harold", "James", "Monica"};
+PrintList(NamesList);
 
 // 2. Print Sum
 
@@ -142,6 +144,7 @@ Console.WriteLine(FindKey(favoriteIceCream, "Timmy"));
 // } 
 List<string> NamesList = new List<string>() {"Julie", "Harold", "James", "Monica"};
 List<int> NameInt = new List<int>() {6, 12, 7, 10};
+
 static Dictionary<string,int> GenerateDictionary(List<string> Names, List<int> Numbers)
 {
     Dictionary<string,int> newDict = new Dictionary<string,int>();
@@ -150,8 +153,10 @@ static Dictionary<string,int> GenerateDictionary(List<string> Names, List<int> N
     }
     return newDict;
 }
-Dictionary<string,int> newDict = GenerateDictionary(NamesList,NameInt);
-foreach(KeyValuePair<string,int> entry in newDict)
+
+Dictionary<string,int> finalDict = GenerateDictionary(NamesList,NameInt);
+
+foreach(KeyValuePair<string,int> entry in finalDict)
 {
     Console.WriteLine($"{entry.Key} - {entry.Value}");
 }
