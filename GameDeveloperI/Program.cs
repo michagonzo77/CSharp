@@ -21,3 +21,19 @@ Ninja.AddAttack(Kick);
 Ninja.AddAttack(Sword);
 
 Ninja.RandomAttack();
+
+Magic Mage = new Magic();
+Ranged Archer = new Ranged();
+Melee Brawler = new Melee();
+
+Brawler.RandomAttack();
+Brawler.Rage();
+Archer.RandomAttack();
+Archer.Dash();
+Archer.RandomAttack();
+Mage.RandomAttack();
+Mage.Heal(Archer);
+Mage.Heal(Mage);
+
+Console.WriteLine(Archer.Attacks[0].Name);
+Archer.OneAttack(Archer.Attacks[0]);
