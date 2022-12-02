@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="~/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <main class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center mt-5 border border-dark w-25 p-5">
+            <form action="process" method="post">
+                <label for="Name">Your Name:</label>
+                <input class="form-control" type="text" name="Name">
+                <label for="Location">Dojo Location:</label>
+                <input class="form-control" type="text" name="Location">
+                <label for="Language">Favorite Language:</label>
+                <select class="form-control" type="text" name="Language">
+                    <option value="error">--Select One--</option>
+                    <option value="forward">forward</option>
+                    <option value="goalkeeper">goalkeeper</option>
+                    <option value="striker">striker</option>
+                    <option value="sweeper">sweeper</option>
+                </select>
+                <label for="Comment">Comment (optional):</label>
+                <textarea class="form-control" type="text" name="Comment"></textarea>
+                <input class="form-control mt-3 bg-primary text-light border border-dark" type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

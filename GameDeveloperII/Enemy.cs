@@ -11,19 +11,22 @@ class Enemy
         HealthAmount = 100;
         Attacks = new List<Attack>();
     }
+
     public Enemy(string n, int h)
     {
         Name = n;
         HealthAmount = h;
         Attacks = new List<Attack>();
     }
-    public virtual Attack RandomAttack()
+
+    public virtual Attack? RandomAttack()
     {
         Random rand = new Random();
         int attackIdx = rand.Next(0, Attacks.Count);
         Console.WriteLine($"Enemy {Name} has used attack {Attacks[attackIdx].Name} and has hit for {Attacks[attackIdx].DamageAmount}");
         return Attacks[attackIdx];
     }
+
     public void AddAttack(Attack attack)
     {
         Attacks.Add(attack);

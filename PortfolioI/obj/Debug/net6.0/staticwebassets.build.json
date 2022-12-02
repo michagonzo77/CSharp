@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "0ahxR51WU2C78jdmEzYFDEx3GTUEp6nuVj5OFHp+vRs=",
+  "Hash": "GYoEu6BlW07IW91TzGueT3gOtvnmd5nLkjZW/G1+Png=",
   "Source": "PortfolioI",
   "BasePath": "_content/PortfolioI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "PortfolioI\\wwwroot",
+      "Source": "PortfolioI",
+      "ContentRoot": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\PortfolioI\\wwwroot\\",
+      "BasePath": "_content/PortfolioI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\PortfolioI\\wwwroot\\css\\style.css",
+      "SourceId": "PortfolioI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\PortfolioI\\wwwroot\\",
+      "BasePath": "_content/PortfolioI",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    }
+  ]
 }

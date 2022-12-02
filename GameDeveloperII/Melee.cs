@@ -6,11 +6,15 @@ class Melee : Enemy
         Attacks.Add(new Attack("Kick", 15));
         Attacks.Add(new Attack("Tackle", 25));
     }
-    public void Rage()
+    public Attack? Rage()
     {
-        Attack RageItUp = base.RandomAttack();
+        Attack? RageItUp = base.RandomAttack();
+        if (RageItUp == null){
+            return null;
+        }
         RageItUp.DamageAmount += 10;
-        Console.WriteLine($"{Name} has RAGED UP and increase damage to {RageItUp.Name} by 10 extra DMG!");
+        Console.WriteLine($"{Name} has RAGED UP and increased damage to {RageItUp.Name} by 10 extra DMG!");
         Console.WriteLine($"{RageItUp.Name} has hit for {RageItUp.DamageAmount}");
+        return RageItUp;
     }
 }

@@ -6,10 +6,10 @@ class Magic : Enemy
         Attacks.Add(new Attack("Shield", 0));
         Attacks.Add(new Attack("Staff Strike", 15));
     }
-    public void Heal(Enemy enemy)
+    public void Heal(Enemy target)
     {
-        enemy._HealthAmount += 40;
-        Console.WriteLine($"{Name} has healed {enemy.Name} by 40");
-        Console.WriteLine($"{enemy.Name} now has {enemy._HealthAmount} health");
+        target._HealthAmount += 40;
+        Console.WriteLine($"{Name} has healed {target.Name} by 40");
+        Console.WriteLine($"{target.Name} now has {target._HealthAmount} health");
     }
 }

@@ -21,3 +21,4 @@ C:\Users\Coding Dojo\Desktop\csharp\PortfolioI\obj\Debug\net6.0\refint\Portfolio
 C:\Users\Coding Dojo\Desktop\csharp\PortfolioI\obj\Debug\net6.0\PortfolioI.pdb
 C:\Users\Coding Dojo\Desktop\csharp\PortfolioI\obj\Debug\net6.0\PortfolioI.genruntimeconfig.cache
 C:\Users\Coding Dojo\Desktop\csharp\PortfolioI\obj\Debug\net6.0\ref\PortfolioI.dll
+C:\Users\Coding Dojo\Desktop\csharp\PortfolioI\bin\Debug\net6.0\PortfolioI.staticwebassets.runtime.json
