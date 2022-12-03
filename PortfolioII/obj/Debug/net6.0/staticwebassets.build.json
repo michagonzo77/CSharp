@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "70NKJ+PObidpFCVwzxbKXqB12TAbJh2XJhaxrBTMeu0=",
+  "Hash": "5/3xkZH7qM3cKOQFuypTG1FylPSlmXyltxgWYv+XwuI=",
   "Source": "PortfolioI",
   "BasePath": "_content/PortfolioI",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\IMG_0770.JPG"
+    },
+    {
+      "Identity": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\PortfolioII\\wwwroot\\images\\tennisballs.jpg",
+      "SourceId": "PortfolioI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\PortfolioII\\wwwroot\\",
+      "BasePath": "_content/PortfolioI",
+      "RelativePath": "images/tennisballs.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\tennisballs.jpg"
     }
   ]
 }

@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+<div class="d-flex justify-content-between">
+    <h2>Welcome @Context.Session.GetString("Username")</h2>
+    <form action="/logout" method="post">
+        <input type="submit" value="Logout" class="btn btn-danger">
+    </form>
+</div>
+<div class="d-flex justify-content-center mt-5">
+    <h2>@Context.Session.GetInt32("MyNum")</h2>
+</div>
+
+<div class="d-flex justify-content-center p-2 gap-3">
+    <form class="btn btn-warning" action="/plusone" method="post">
+        <input type="submit" name="plusone" value="+1" class="btn btn-warning">
+    </form>
+    <form class="btn btn-primary" action="/minusone" method="post">
+        <input type="submit" name="minusone" value="-1" class="btn btn-primary">
+    </form>
+</div>
+<div class="d-flex justify-content-center p-2 gap-3">
+    <form class="btn btn-danger" action="/timestwo" method="post">
+        <input type="submit" name="timestwo" value="x2" class="btn btn-danger">
+    </form>
+    <form class="btn btn-success" action="/random" method="post">
+        <input type="submit" name="random" value="+ Random" class="btn btn-success">
+    </form>
+</div>
+<h2 class="text-center mt-5">Using 1 Action in Controller</h2>
+<div class="d-flex justify-content-center p-2 gap-3">
+    <form action="/changenum" method="post">
+        <input type="submit" name="plusone" value="+1" class="btn btn-warning">
+        <input type="submit" name="minusone" value="-1" class="btn btn-primary">
+        <input type="submit" name="timestwo" value="x2" class="btn btn-danger">
+        <input type="submit" name="random" value="+ Random" class="btn btn-success">
+    </form>
+</div>
+
+<form id="MyForm" action="tester" method="post">
+    <input type="hidden" id="Action" name="Action" value="null"/>
+</form>
+
+
+<button onclick="submitButton('plusone')" class="btn btn-primary">+1</button>
+<button onclick="submitButton('minusone')" class="btn btn-primary">-1</button>
+<button onclick="submitButton('timestwo')" class="btn btn-primary">x2</button>
+<button onclick="submitButton('random')" class="btn btn-primary">+ Random</button>
+
+
+<script>
+    function submitButton(str) {
+        document.getElementById("Action").value = str;
+        documetn.getElementById("MyForm").submit();
+    }
+</script>
+

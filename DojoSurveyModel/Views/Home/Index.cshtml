@@ -30,6 +30,11 @@
             <span asp-validation-for="Language" class="text-danger"></span>
         </div>
         <div class="mb-3">
+            <label asp-for="date"></label>
+            <input type="date" asp-for="date">
+            <span asp-validation-for="date" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
             <label asp-for="Comment"></label>
             <input asp-for="Comment" class="form-control">
             <span asp-validation-for="Comment" class="text-danger"></span>

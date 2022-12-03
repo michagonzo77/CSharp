@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome!</h1>
+    <h3>Please give your name:</h3>
+    <div class="d-flex justify-content-center">
+        <form action="/login" method="post" class="w-50">
+            <input type="text" name="NewName" class="form-control">
+            <input type="submit" value="Submit" class="btn btn-info mt-3">
+        </form>
+    </div>
+</div>

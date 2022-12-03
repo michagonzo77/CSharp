@@ -12,6 +12,8 @@ public class Survey
     [Required]
     [MinLength(2)]
     public string Language {get;set;}
+    [Birthday]
+    public DateTime date {get;set;}
     [MinLength(20)]
     public string? Comment {get;set;}
 }

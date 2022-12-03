@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RrJkJ1+PMq4I13JUPdXhn+qAX7bE06bzzpnBM0SI7Qc=",
+  "Hash": "Hx4f0yCVnJrFqDyrxz8zCuO5WxD+hDgya7iZCZoLhx4=",
   "Source": "DojoSurveyModel",
   "BasePath": "_content/DojoSurveyModel",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\DojoSurveyModel\\wwwroot\\giphy.svg",
+      "SourceId": "DojoSurveyModel",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\DojoSurveyModel\\wwwroot\\",
+      "BasePath": "_content/DojoSurveyModel",
+      "RelativePath": "giphy.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\giphy.svg"
     },
     {
       "Identity": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\DojoSurveyModel\\wwwroot\\js\\site.js",

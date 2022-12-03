@@ -8,21 +8,21 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PortfolioI
 build_property.RootNamespace = PortfolioI
-build_property.ProjectDir = C:\Users\Coding Dojo\Desktop\csharp\PortfolioII\
+build_property.ProjectDir = c:\Users\Coding Dojo\Desktop\csharp\PortfolioII\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Coding Dojo\Desktop\csharp\PortfolioII
+build_property.MSBuildProjectDirectory = c:\Users\Coding Dojo\Desktop\csharp\PortfolioII
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Coding Dojo/Desktop/csharp/PortfolioII/Views/Portfolio/Contact.cshtml]
+[c:/Users/Coding Dojo/Desktop/csharp/PortfolioII/Views/Portfolio/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXENvbnRhY3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Coding Dojo/Desktop/csharp/PortfolioII/Views/Portfolio/Index.cshtml]
+[c:/Users/Coding Dojo/Desktop/csharp/PortfolioII/Views/Portfolio/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Coding Dojo/Desktop/csharp/PortfolioII/Views/Portfolio/Projects.cshtml]
+[c:/Users/Coding Dojo/Desktop/csharp/PortfolioII/Views/Portfolio/Projects.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXFByb2plY3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
