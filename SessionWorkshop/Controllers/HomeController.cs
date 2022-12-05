@@ -58,19 +58,19 @@ public class HomeController : Controller
     public IActionResult ChangeNum(IFormCollection collection)
     {
         string result = collection.First().Key;
-        int? NumNum = HttpContext.Session.GetInt32("MyNum");
+        int? numNum = HttpContext.Session.GetInt32("MyNum");
         if (result == "plusone"){
-            NumNum += 1;
+            numNum += 1;
         } else if (result == "minusone"){
-            NumNum -= 1;
+            numNum -= 1;
         } else if (result == "timestwo"){
-            NumNum *= 2;
+            numNum *= 2;
         } else if (result == "random"){
             Random rand = new Random();
             int randNum = rand.Next(1,11);
-            NumNum += randNum;
+            numNum += randNum;
         }
-        HttpContext.Session.SetInt32("MyNum", (int)NumNum);
+        HttpContext.Session.SetInt32("MyNum", (int)numNum);
         return RedirectToAction("Dashboard");
     }
 
@@ -105,9 +105,8 @@ public class HomeController : Controller
     public IActionResult Random()
     {
         Random rand = new Random();
-        int randNum = rand.Next(1,11);
         int? Number = HttpContext.Session.GetInt32("MyNum");
-        Number += randNum;
+        Number += rand.Next(1,11);
         HttpContext.Session.SetInt32("MyNum", (int)Number);
         return RedirectToAction("Dashboard");
     }

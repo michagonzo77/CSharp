@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5/3xkZH7qM3cKOQFuypTG1FylPSlmXyltxgWYv+XwuI=",
+  "Hash": "1A9mYvpoI03NMz5YbiCKA3Ni2QAkJGbo6HF2ZjB5ToM=",
   "Source": "PortfolioI",
   "BasePath": "_content/PortfolioI",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "wwwroot\\images\\IMG_0089.JPG"
     },
     {
+      "Identity": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\PortfolioII\\wwwroot\\images\\IMG_0141-min.JPG",
+      "SourceId": "PortfolioI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\PortfolioII\\wwwroot\\",
+      "BasePath": "_content/PortfolioI",
+      "RelativePath": "images/IMG_0141-min.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\IMG_0141-min.JPG"
+    },
+    {
       "Identity": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\PortfolioII\\wwwroot\\images\\IMG_0141.JPG",
       "SourceId": "PortfolioI",
       "SourceType": "Discovered",
@@ -66,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\IMG_0141.JPG"
+    },
+    {
+      "Identity": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\PortfolioII\\wwwroot\\images\\IMG_0142-min.JPG",
+      "SourceId": "PortfolioI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\PortfolioII\\wwwroot\\",
+      "BasePath": "_content/PortfolioI",
+      "RelativePath": "images/IMG_0142-min.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\IMG_0142-min.JPG"
     },
     {
       "Identity": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\PortfolioII\\wwwroot\\images\\IMG_0142.JPG",
@@ -85,6 +119,23 @@
       "OriginalItemSpec": "wwwroot\\images\\IMG_0142.JPG"
     },
     {
+      "Identity": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\PortfolioII\\wwwroot\\images\\IMG_0770.jfif",
+      "SourceId": "PortfolioI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\PortfolioII\\wwwroot\\",
+      "BasePath": "_content/PortfolioI",
+      "RelativePath": "images/IMG_0770.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\IMG_0770.jfif"
+    },
+    {
       "Identity": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\PortfolioII\\wwwroot\\images\\IMG_0770.JPG",
       "SourceId": "PortfolioI",
       "SourceType": "Discovered",
@@ -100,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\IMG_0770.JPG"
+    },
+    {
+      "Identity": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\PortfolioII\\wwwroot\\images\\tennisballs-min.jpg",
+      "SourceId": "PortfolioI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\PortfolioII\\wwwroot\\",
+      "BasePath": "_content/PortfolioI",
+      "RelativePath": "images/tennisballs-min.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\tennisballs-min.jpg"
     },
     {
       "Identity": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\PortfolioII\\wwwroot\\images\\tennisballs.jpg",
