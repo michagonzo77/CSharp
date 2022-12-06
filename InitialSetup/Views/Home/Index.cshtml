@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Monster
+<main class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center mt-5 border border-dark w-25 p-5">
+        <form asp-action="CreateMonster" asp-controller="Home" method="post">
+            <div class="mb-3">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control">
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Height"></label>
+                <input type="number" asp-for="Height" class="form-control">
+                <span asp-validation-for="Height" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description"></label>
+                <input asp-for="Description" class="form-control">
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary">
+        </form>
+    </div>
+</main>
+<div class="d-flex justify-content-center mt-5">
+    <table class="table table-striped">
+        <tr>
+            <td>Monster Name</td>
+            <td>Monster Height</td>
+            <td>Monster Description</td>
+            <td>View/Edit</td>
+            <td>Delete</td>
+        </tr>
+    @foreach (Monster m in ViewBag.AllMonsters)
+    {   
+        <tr>
+            <td>@m.Name</td>
+            <td>@m.Height</td>
+            <td>@m.Description</td>
+            <td><a class="btn btn-primary" href="monsters/@m.MonsterId">See Me</a> || <a class="btn btn-info" href="monsters/@m.MonsterId/edit">Edit</a></td>
+            <td> <form asp-action="DestroyMonster" asp-controller="Home" asp-route-MonsterId="@m.MonsterId" method="post">
+            <input class="btn btn-danger" type="submit" value="Delete">
+            </form></td>
+        </tr>
+    }
+    </table>
+</div>
+
+

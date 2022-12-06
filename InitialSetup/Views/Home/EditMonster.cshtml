@@ -1,0 +1,24 @@
+@model Monster
+
+<main class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center mt-5 border border-dark w-25 p-5">
+        <form asp-action="UpdateMonster" asp-controller="Home" asp-route-MonsterId="@Model.MonsterId" method="post">
+            <div class="mb-3">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control">
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Height"></label>
+                <input type="number" asp-for="Height" class="form-control">
+                <span asp-validation-for="Height" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description"></label>
+                <input asp-for="Description" class="form-control">
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary">
+        </form>
+    </div>
+</main>
