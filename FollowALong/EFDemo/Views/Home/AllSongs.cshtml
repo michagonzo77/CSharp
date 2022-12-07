@@ -1,0 +1,25 @@
+@model List<Song>
+<h1>All Songs</h1>
+<table class="table table-striped">
+    <tr class="text-center bg-dark text-light">
+        <th>Title</th>
+        <th>Release Year</th>
+        <th>Genre</th>
+        <th>Artist</th>
+        <th>Actions</th>
+    </tr>
+    @foreach(Song s in Model)
+    {
+        <tr class="text-center">
+            <td>@s.Title</td>
+            <td>@s.Year</td>
+            <td>@s.Genre</td>
+            <td>@s.Artist</td>
+            <td class="d-flex gap-2 justify-content-center">
+                <form asp-action="DestroySong" asp-controller="Home" asp-route-songId="@s.SongId" method="post">
+                    <input type="submit" value="Delete" class="btn btn-danger">
+                </form>
+                <a class="btn btn-info" href="/songs/@s.SongId/edit">Edit</a></td>
+        </tr>
+    }
+</table>

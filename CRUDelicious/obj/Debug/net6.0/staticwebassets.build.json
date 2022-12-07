@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UuKNqcbCBQ+9zSCClIc+wpKMhZEsp6C14lIRsmEdP1o=",
+  "Hash": "y2MRMF21n8PWykVL5D2QpAnfK52/6EONTE4sHn4FiMI=",
   "Source": "CRUDelicious",
   "BasePath": "_content/CRUDelicious",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\CRUDelicious\\wwwroot\\images\\Food.jpeg",
+      "SourceId": "CRUDelicious",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\CRUDelicious\\wwwroot\\",
+      "BasePath": "_content/CRUDelicious",
+      "RelativePath": "images/Food.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Food.jpeg"
     },
     {
       "Identity": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\CRUDelicious\\wwwroot\\js\\site.js",
