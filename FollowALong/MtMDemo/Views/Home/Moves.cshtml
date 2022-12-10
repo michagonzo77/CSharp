@@ -1,0 +1,14 @@
+@model MyViewModel
+<div class="text-center d-flex justify-content-around">
+    <div class="flex-1">
+        <h2>Add a Move</h2>
+        @await Html.PartialAsync("_AddMove", Model.Move)
+    </div>
+    <div class="flex-1">
+        <h2>All Moves</h2>
+        @foreach(Move m in Model.AllMoves)
+        {
+            <h4>@m.Name<em class="text-secondary"> - @m.MoveType</em></h4>
+        }
+    </div>
+</div>

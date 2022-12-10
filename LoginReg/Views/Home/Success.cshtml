@@ -2,3 +2,8 @@
 <form asp-action="Logout" asp-controller="Home" method="post">
     <input type="submit" value="Logout" class="btn btn-danger">
 </form>
+
+@if (Context.Session.GetInt32("UserId") != null)
+{
+    <p class="navbar-item">Hello, User #@Context.Session.GetInt32("UserId")</p>
+}

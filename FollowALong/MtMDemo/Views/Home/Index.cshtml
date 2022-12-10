@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model MyViewModel
+<div class="text-center d-flex justify-content-around">
+    <div class="p-1">
+        <h2>Add a Pokemon</h2>
+        @await Html.PartialAsync("_AddPokemon", Model.Pokemon)
+    </div>
+    <div class="p-1">
+        <h2>All Pokemon</h2>
+        <div class="d-flex flex-wrap">
+            @foreach (Pokemon p in Model.AllPokemon)
+            {
+                <a href="/pokemon/@p.PokemonId">
+                    <div class="border bg-light rounded p-2 m-2">
+                        <img src="@p.Icon" alt="@p.Name">
+                        <h5>@p.Name</h5>
+                    </div>
+                </a>
+            }
+        </div>
+    </div>
+</div>

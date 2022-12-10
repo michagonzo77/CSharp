@@ -67,7 +67,7 @@ public class HomeController : Controller
             if(result == 0)
             {
                 // A failure, we did not use the right password
-                ModelState.AddModelError("LEmail", "Invalid Email/Password");
+                ModelState.AddModelError("LPassword", "Invalid Email/Password");
                 return View("Index");
             } else {
                 // Set session and head to Success

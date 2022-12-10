@@ -1,0 +1,19 @@
+@model Move
+<form asp-action="CreateMove" asp-controller="Home" method="post">
+    <div class="mb-3">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="MoveType"></label>
+        <select asp-for="MoveType" class="form-select">
+            @foreach(string m in ViewBag.AllMoves)
+            {
+                <option value="@m">@m</option>
+            }
+        </select>
+        <span asp-validation-for="MoveType" class="text-danger"></span>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-info">
+</form>

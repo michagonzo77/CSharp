@@ -1,0 +1,10 @@
+@model Pokemon
+<img src="@Model.Icon" alt="@Model.Name">
+<h2>@Model.Name</h2>
+<h3>Known Moves</h3>
+<ul>
+    @foreach(KnownMove m in @Model.MovesKnown)
+    {
+        <li>@m.Move.Name - @m.Move.MoveType</li>
+    }
+</ul>

@@ -1,0 +1,14 @@
+@model Pokemon
+<form asp-action="CreatePokemon" asp-controller="Home" method="post">
+    <div class="mb-3">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Icon"></label>
+        <input asp-for="Icon" class="form-control">
+        <span asp-validation-for="Icon" class="text-danger"></span>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-info">
+</form>

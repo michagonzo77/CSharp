@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "Add Category";
+}
+@model MyViewModel
+<div class="d-flex justify-content-center">
+    <ul class="list-unstyled d-flex justify-content-center gap-3">
+        <li class="display-6"><a class="text-decoration-none" href="/">Products</a></li>
+        <li class="display-6">|</li>
+        <li class="display-6">Categories</li>
+    </ul>
+</div>
+<div class="text-center d-flex justify-content-center gap-5 mt-5">
+    <div class="flex-1 m-2">
+        <h2>New Category</h2>
+        @await Html.PartialAsync("_AddCategory", Model.Category)
+    </div>
+    <div class="vl"></div>
+    <div class="flex-1 m-2">
+        <h2>All Categories</h2>
+        <hr></hr>
+        @foreach (Category c in Model.AllCategories)
+        {
+            <div class="d-flex gap-3">
+                <h2><a href="/categories/@c.CategoryId">@c.Name</a></h2>
+            </div>
+        }
+    </div>
+</div>

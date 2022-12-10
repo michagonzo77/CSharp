@@ -1,0 +1,14 @@
+@model Maker
+<form asp-action="CreateMaker" asp-controller="Home" method="post">
+    <div class="mb-3">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="CountryOfOrigin"></label>
+        <input asp-for="CountryOfOrigin" class="form-control">
+        <span asp-validation-for="CountryOfOrigin" class="text-danger"></span>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary m-2">
+</form>
