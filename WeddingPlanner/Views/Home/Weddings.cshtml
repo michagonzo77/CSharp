@@ -1,0 +1,61 @@
+@model Reservation
+<div class="d-flex justify-content-between">
+    Hi, @ViewBag.LoggedInUser.FirstName
+    <ul class="d-flex list-unstyled gap-5">
+        <li>Home</li>
+        |
+        <li><a href="weddings/new">Plan a Wedding</a></li>
+        |
+        <li>
+            <form asp-action="Logout" asp-controller="Home" method="post">
+                <input type="submit" value="Logout" class="btn btn-danger">
+            </form>
+        </li>
+    </ul>
+</div>
+<hr>
+</hr>
+<table class="table table-striped">
+    <tr>
+        <th>Wedding Of</th>
+        <th>Date</th>
+        <th>Guest Count</th>
+        <th>Action</th>
+    </tr>
+    @foreach (Wedding w in ViewBag.AllWeddings)
+    {
+        <tr>
+            <td>@w.WedderOne & @w.WedderTwo</td>
+            <td>@w.WeddingDate</td>
+            <td>@w.Guests.Count</td>
+            <td class="d-flex gap-2">
+                <a class="btn btn-info" href="/weddings/@w.WeddingId">View</a>
+                @{
+                    @* if(!w.Guests.Any(r => r.UserId == ViewBag.LoggedInUser.UserId)) *@
+                    if (!w.HasBeenRespondedToBy(ViewBag.LoggedInUser.UserId))
+                    {
+                        <form asp-action="RSVPWedding" asp-controller="Home" method="post">
+                            <input asp-for="WeddingId" type="hidden" value="@w.WeddingId">
+                            <input asp-for="UserId" type="hidden" value="@ViewBag.LoggedInUser.UserId">
+                            <input type="submit" value="RSVP" class="btn btn-success">
+                        </form>
+                    }
+                    else
+                    {
+                        <form asp-action="UnRSVPWedding" asp-controller="Home" asp-route-weddingId="@w.WeddingId" method="post">
+                            <input type="submit" value="UnRSVP" class="btn btn-danger">
+                        </form>
+                    }
+                }
+                @{
+                    if (w.UserId == ViewBag.LoggedInUser.UserId)
+                    {
+                        <form asp-action="DestroyWedding" asp-controller="Home" asp-route-weddingId="@w.WeddingId" method="post">
+                            <input type="submit" value="Delete" class="btn btn-danger">
+                        </form>
+                    }
+                }
+            </td>
+        </tr>
+    }
+</table>

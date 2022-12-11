@@ -1,0 +1,42 @@
+@model Wedding
+<div class="d-flex justify-content-between">
+    <ul class="d-flex list-unstyled gap-5">
+        <li>Home</li>
+        |
+        <li><a href="weddings/new">Plan a Wedding</a></li>
+        |
+        <li>
+            <form asp-action="Logout" asp-controller="Home" method="post">
+                <input type="submit" value="Logout" class="btn btn-danger">
+            </form>
+        </li>
+    </ul>
+</div>
+<h1>Plan a Wedding</h1>
+<form asp-action="CreateWedding" asp-controller="Home" method="post">
+    <div class="mb-3">
+        <label asp-for="WedderOne"></label>
+        <input asp-for="WedderOne" class="form-control">
+        <span asp-validation-for="WedderOne" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="WedderTwo"></label>
+        <input asp-for="WedderTwo" class="form-control">
+        <span asp-validation-for="WedderTwo" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="WeddingDate"></label>
+        <input asp-for="WeddingDate" class="form-control">
+        <span asp-validation-for="WeddingDate" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Address"></label>
+        <input asp-for="Address" class="form-control">
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <input asp-for="UserId" type="hidden" value="@ViewBag.LoggedInUser.UserId" class="form-control">
+        <span asp-validation-for="UserId" class="text-danger"></span>
+    </div>
+    <input type="submit" value="Create" class="btn btn-primary">
+</form>

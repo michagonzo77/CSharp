@@ -1,0 +1,11 @@
+#pragma warning disable CS8618
+
+namespace WeddingPlanner.Models;
+public class ShowWeddingViewModel
+{
+    public Wedding Wedding {get;set;}
+    public List<Wedding> AllWeddings {get;set;}
+    public List<Reservation> PlannedWeddings {get;set;}
+    public List<Reservation> Guests {get;set;}
+    public User User {get;set;}
+}

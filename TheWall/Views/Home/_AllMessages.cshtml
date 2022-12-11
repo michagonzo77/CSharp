@@ -1,0 +1,13 @@
+@model MyWallModel
+
+@foreach (Message m in Model.AllMessages)
+    {
+        <div class="border border-solid mb-3 mt-3">
+            <div class="d-flex gap-2">
+                <h5>@m.User.FirstName @m.User.LastName.Substring(0,1)</h5>
+                <p>-</p>
+                <h5>@m.CreatedAt</h5>
+            </div>
+            <p class="ms-3">@m.MessageText</p>
+        </div>
+    }

@@ -8,65 +8,65 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProductsAndCategories
 build_property.RootNamespace = ProductsAndCategories
-build_property.ProjectDir = C:\Users\Coding Dojo\Desktop\csharp\ProductsAndCategories\
+build_property.ProjectDir = c:\Users\Coding Dojo\Desktop\csharp\ProductsAndCategories\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Coding Dojo\Desktop\csharp\ProductsAndCategories
+build_property.MSBuildProjectDirectory = c:\Users\Coding Dojo\Desktop\csharp\ProductsAndCategories
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/Categories.cshtml]
+[c:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/Categories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRlZ29yaWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/Privacy.cshtml]
+[c:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/Products.cshtml]
+[c:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/Products.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/ShowCategory.cshtml]
+[c:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/ShowCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG93Q2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/ShowProduct.cshtml]
+[c:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/ShowProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG93UHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/_AddAssociation.cshtml]
+[c:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/_AddAssociation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfQWRkQXNzb2NpYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/_AddCategory.cshtml]
+[c:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/_AddCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfQWRkQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/_AddItem.cshtml]
+[c:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/_AddItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfQWRkSXRlbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/_AddProduct.cshtml]
+[c:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Home/_AddProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfQWRkUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Shared/Error.cshtml]
+[c:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/_ViewImports.cshtml]
+[c:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/_ViewStart.cshtml]
+[c:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Shared/_Layout.cshtml]
+[c:/Users/Coding Dojo/Desktop/csharp/ProductsAndCategories/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8d2lq70uyv

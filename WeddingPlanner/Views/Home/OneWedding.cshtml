@@ -1,0 +1,25 @@
+@model ShowWeddingViewModel
+<div class="d-flex justify-content-between">
+Hi, @ViewBag.LoggedInUser.FirstName
+<ul class="d-flex list-unstyled gap-5">
+    <li><a href="/">Home</a></li>
+    |
+    <li><a href="/weddings/new">Plan a Wedding</a></li>
+    |
+    <li><a href="/logout">Logout</a></li>
+        <form asp-action="Logout" asp-controller="Home" method="post">
+            <input type="submit" value="Logout" class="btn btn-danger">
+        </form>
+    </li>
+</ul>
+</div>
+<hr></hr>
+<h1>@Model.Wedding.WedderOne's & @Model.Wedding.WedderTwo's Wedding</h1>
+<h3>@Model.Wedding.WeddingDate</h3>
+<h3>Guests</h3>
+<div class="border border-solid">
+    @foreach(Reservation guest in Model.Wedding.Guests)
+    {
+        <p>@guest.User.FirstName @guest.User.LastName</p>
+    }
+</div>
