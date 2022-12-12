@@ -1,3 +1,38 @@
+/Users/upwardbuzz/CSharp/TheWall/bin/Debug/net6.0/appsettings.Development.json
+/Users/upwardbuzz/CSharp/TheWall/bin/Debug/net6.0/appsettings.json
+/Users/upwardbuzz/CSharp/TheWall/bin/Debug/net6.0/TheWall.staticwebassets.runtime.json
+/Users/upwardbuzz/CSharp/TheWall/bin/Debug/net6.0/TheWall
+/Users/upwardbuzz/CSharp/TheWall/bin/Debug/net6.0/TheWall.deps.json
+/Users/upwardbuzz/CSharp/TheWall/bin/Debug/net6.0/TheWall.runtimeconfig.json
+/Users/upwardbuzz/CSharp/TheWall/bin/Debug/net6.0/TheWall.dll
+/Users/upwardbuzz/CSharp/TheWall/bin/Debug/net6.0/TheWall.pdb
+/Users/upwardbuzz/CSharp/TheWall/bin/Debug/net6.0/Humanizer.dll
+/Users/upwardbuzz/CSharp/TheWall/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/Users/upwardbuzz/CSharp/TheWall/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/upwardbuzz/CSharp/TheWall/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/upwardbuzz/CSharp/TheWall/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/upwardbuzz/CSharp/TheWall/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/upwardbuzz/CSharp/TheWall/bin/Debug/net6.0/MySqlConnector.dll
+/Users/upwardbuzz/CSharp/TheWall/bin/Debug/net6.0/Pomelo.EntityFrameworkCore.MySql.dll
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/TheWall.csproj.AssemblyReference.cache
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/TheWall.GeneratedMSBuildEditorConfig.editorconfig
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/TheWall.AssemblyInfoInputs.cache
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/TheWall.AssemblyInfo.cs
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/TheWall.csproj.CoreCompileInputs.cache
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/TheWall.MvcApplicationPartsAssemblyInfo.cache
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/TheWall.RazorAssemblyInfo.cache
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/TheWall.RazorAssemblyInfo.cs
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/staticwebassets.build.json
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/staticwebassets.development.json
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/scopedcss/bundle/TheWall.styles.css
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/scopedcss/projectbundle/TheWall.bundle.scp.css
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/TheWall.csproj.CopyComplete
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/TheWall.dll
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/refint/TheWall.dll
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/TheWall.pdb
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/TheWall.genruntimeconfig.cache
+/Users/upwardbuzz/CSharp/TheWall/obj/Debug/net6.0/ref/TheWall.dll
 C:\Users\Coding Dojo\Desktop\csharp\TheWall\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Coding Dojo\Desktop\csharp\TheWall\bin\Debug\net6.0\appsettings.json
 C:\Users\Coding Dojo\Desktop\csharp\TheWall\bin\Debug\net6.0\TheWall.staticwebassets.runtime.json

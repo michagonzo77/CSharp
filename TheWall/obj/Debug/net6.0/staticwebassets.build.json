@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VEADU0Jx8yLeC38gkeUaS39Qh30utRNznNbj4R0yMk4=",
+  "Hash": "B+/7ZCQgoe3uT7FgP3YRBFQr1Z1xZkbX4b/H0RAn5yk=",
   "Source": "TheWall",
   "BasePath": "_content/TheWall",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\TheWall\\wwwroot\\images\\thewallBG.png",
+      "SourceId": "TheWall",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\TheWall\\wwwroot\\",
+      "BasePath": "_content/TheWall",
+      "RelativePath": "images/thewallBG.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\thewallBG.png"
     },
     {
       "Identity": "C:\\Users\\Coding Dojo\\Desktop\\csharp\\TheWall\\wwwroot\\js\\site.js",

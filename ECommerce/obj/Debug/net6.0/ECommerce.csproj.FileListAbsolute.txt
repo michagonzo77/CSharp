@@ -1,0 +1,70 @@
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/ECommerce.csproj.AssemblyReference.cache
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/ECommerce.GeneratedMSBuildEditorConfig.editorconfig
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/ECommerce.AssemblyInfoInputs.cache
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/ECommerce.AssemblyInfo.cs
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/ECommerce.csproj.CoreCompileInputs.cache
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/ECommerce.MvcApplicationPartsAssemblyInfo.cache
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/ECommerce.RazorAssemblyInfo.cache
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/ECommerce.RazorAssemblyInfo.cs
+/Users/upwardbuzz/CSharp/ECommerce/bin/Debug/net6.0/appsettings.Development.json
+/Users/upwardbuzz/CSharp/ECommerce/bin/Debug/net6.0/appsettings.json
+/Users/upwardbuzz/CSharp/ECommerce/bin/Debug/net6.0/ECommerce.staticwebassets.runtime.json
+/Users/upwardbuzz/CSharp/ECommerce/bin/Debug/net6.0/ECommerce
+/Users/upwardbuzz/CSharp/ECommerce/bin/Debug/net6.0/ECommerce.deps.json
+/Users/upwardbuzz/CSharp/ECommerce/bin/Debug/net6.0/ECommerce.runtimeconfig.json
+/Users/upwardbuzz/CSharp/ECommerce/bin/Debug/net6.0/ECommerce.dll
+/Users/upwardbuzz/CSharp/ECommerce/bin/Debug/net6.0/ECommerce.pdb
+/Users/upwardbuzz/CSharp/ECommerce/bin/Debug/net6.0/Humanizer.dll
+/Users/upwardbuzz/CSharp/ECommerce/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/Users/upwardbuzz/CSharp/ECommerce/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/upwardbuzz/CSharp/ECommerce/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/upwardbuzz/CSharp/ECommerce/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/upwardbuzz/CSharp/ECommerce/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/upwardbuzz/CSharp/ECommerce/bin/Debug/net6.0/MySqlConnector.dll
+/Users/upwardbuzz/CSharp/ECommerce/bin/Debug/net6.0/Pomelo.EntityFrameworkCore.MySql.dll
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/staticwebassets.build.json
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/staticwebassets.development.json
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/scopedcss/bundle/ECommerce.styles.css
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/scopedcss/projectbundle/ECommerce.bundle.scp.css
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/ECommerce.csproj.CopyComplete
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/ECommerce.dll
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/refint/ECommerce.dll
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/ECommerce.pdb
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/ECommerce.genruntimeconfig.cache
+/Users/upwardbuzz/CSharp/ECommerce/obj/Debug/net6.0/ref/ECommerce.dll
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\bin\Debug\net6.0\appsettings.json
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\bin\Debug\net6.0\ECommerce.staticwebassets.runtime.json
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\bin\Debug\net6.0\ECommerce.exe
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\bin\Debug\net6.0\ECommerce.deps.json
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\bin\Debug\net6.0\ECommerce.runtimeconfig.json
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\bin\Debug\net6.0\ECommerce.dll
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\bin\Debug\net6.0\ECommerce.pdb
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\ECommerce.csproj.AssemblyReference.cache
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\ECommerce.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\ECommerce.AssemblyInfoInputs.cache
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\ECommerce.AssemblyInfo.cs
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\ECommerce.csproj.CoreCompileInputs.cache
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\ECommerce.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\ECommerce.RazorAssemblyInfo.cache
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\ECommerce.RazorAssemblyInfo.cs
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\scopedcss\bundle\ECommerce.styles.css
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\scopedcss\projectbundle\ECommerce.bundle.scp.css
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\ECommerce.csproj.CopyComplete
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\ECommerce.dll
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\refint\ECommerce.dll
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\ECommerce.pdb
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\ECommerce.genruntimeconfig.cache
+C:\Users\Coding Dojo\Desktop\csharp\ECommerce\obj\Debug\net6.0\ref\ECommerce.dll

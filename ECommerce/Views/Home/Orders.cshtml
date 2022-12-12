@@ -1,0 +1,38 @@
+@model MyViewModel
+<div class="d-flex nav">
+    <ul class="list-unstyled d-flex gap-3">
+        <li><a href="/">Dashboard</a></li>
+        <li>|</li>
+        <li><a href="/products">Products</a></li>
+        <li>|</li>
+        <li>Orders</li>
+        <li>|</li>
+        <li><a href="/customers">Customers</a></li>
+        <li>|</li>
+    </ul>
+</div>
+<h3>Add a new order</h3>
+<div class="d-flex">
+    <div class="left d-flex">
+        @await Html.PartialAsync("_AddOrder", Model.Order)
+    </div>
+</div>
+    <div class="bottom mt-3">
+        <table class="table table-striped">
+            <tr>
+                <th>Customer Name</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Date</th>
+            </tr>
+        @foreach(Order o in Model.AllOrders)
+        {
+            <tr>
+                <td>@o.Customer.Name</td>
+                <td>@o.Product.Name</td>
+                <td>@o.Quantity</td>
+                <td>@o.CreatedAt</td>
+            </tr>
+        }
+        </table>
+    </div>

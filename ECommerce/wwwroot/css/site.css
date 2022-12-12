@@ -16,3 +16,12 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.productImage{
+  width: 200px;
+  height: 280px;
+}
+
+.right {
+  flex-wrap: wrap;
+}

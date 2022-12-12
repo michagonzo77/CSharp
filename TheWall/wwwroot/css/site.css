@@ -1,3 +1,7 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 html {
   font-size: 14px;
 }
@@ -15,4 +19,99 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+body {
+  background: url(../images/thewallBG.png) left center no-repeat,
+            #002834 right center no-repeat;
+}
+
+.login {
+  color: white;
+  height: 100%;
+}
+
+.registerTitle {
+  font-size: 50px;
+  font-style: bold;
+  margin-bottom: 5%;
+  margin-top: 10%;
+}
+
+.btn-pink {
+  background-color: #D4267A;
+  color: white;
+}
+
+.loginTitle{
+  font-size: 50px;
+  font-style: bold;
+  margin-top: 20%;
+}
+
+.loginSide {
+  /* padding: 5%; */
+  height: 100%;
+  background: #002834;
+  box-shadow: -22px 1px 24px 4px rgba(0, 0, 0, 0.25);
+  /* width: 400px; */
+  /* width: 30%; */
+  /* position: fixed; */
+  /* z-index: 1; */
+  /* top: 0; */
+  /* right: 0; */
+  /* overflow-x: hidden; */
+}
+
+.realLogin {
+  position: fixed;
+  /* top: 20%; */
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 32px;
+  background: linear-gradient(163.63deg, rgba(255, 255, 255, 0.24) 4.47%, rgba(255, 255, 255, 0.072) 48.83%, rgba(255, 255, 255, 0.0696) 80.59%);
+  box-shadow: 18px 19px 30px rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
+  width: 480px;
+  height: 100%;
+}
+
+.registerSide {
+  padding: 5%;
+  height: 100%;
+  /* position: fixed; */
+  /* z-index: 1;
+  top: 5%;
+  left: 10%; */
+  overflow-x: hidden;
+  width: 800px;
+  margin-right: 20%;
+  margin-top: 2%;
+}
+
+.login-form {
+  width: 326px;
+}
+
+.loginForm {
+  width: 266px;
+}
+
+.formLabel {
+  text-align: left;
+}
+
+.loginMax {
+  text-align:justify;
+}
+
+.buttonCenter {
+  margin-left: 34%;
+  width: 200px;
+}
+
+.buttonLogin {
+  width: 160px;
 }

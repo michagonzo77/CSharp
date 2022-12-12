@@ -1,0 +1,31 @@
+@model MyViewModel
+<div class="d-flex nav">
+    <ul class="list-unstyled d-flex gap-3">
+        <li><a href="/">Dashboard</a></li>
+        <li>|</li>
+        <li>Products</li>
+        <li>|</li>
+        <li><a href="/orders">Orders</a></li>
+        <li>|</li>
+        <li><a href="/customers">Customers</a></li>
+        <li>|</li>
+    </ul>
+</div>
+<div class="d-flex">
+    <div class="left">
+        <h3>Add a new product</h3>
+        @await Html.PartialAsync("_AddProduct", Model.Product)
+    </div>
+    <div class="right d-flex justify-content-center">
+        @foreach (Product p in Model.AllProducts)
+
+        {
+            <div>
+                <img class="productImage m-2" src="@p.Image">
+                <p>@p.Name</p>
+                <p>@p.Quantity left</p>
+            </div>
+
+        }
+    </div>
+</div>

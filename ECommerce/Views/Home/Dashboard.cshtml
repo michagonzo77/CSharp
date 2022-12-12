@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model MyViewModel
+<div class="d-flex nav">
+    <ul class="list-unstyled d-flex gap-3">
+        <li>Dashboard</li>
+        <li>|</li>
+        <li><a href="/products">Products</a></li>
+        <li>|</li>
+        <li><a href="/orders">Orders</a></li>
+        <li>|</li>
+        <li><a href="/customers">Customers</a></li>
+        <li>|</li>
+    </ul>
+</div>
+<div class="text-center d-flex">
+    @foreach(Product p in Model.AllProducts)
+    {
+        <div>
+            <img class="productImage m-2" src="@p.Image">
+            <p>@p.Name</p>
+            <p>@p.Quantity left</p>
+        </div>
+    }
+    <a href="/products">Show More Products...</a>
+</div>
+<div>
+    <h3>Recent Orders</h3>
+    @foreach(Order o in Model.AllOrders)
+    {
+        <p>@o.Customer.Name ordered @o.Product.Name @o.DaysSinceOrder day's ago</p>
+    }
+</div>
+<div>
+    <h3>New Customers</h3>
+    @foreach(Customer c in Model.AllCustomers)
+    {
+        <p>@c.Name joined the store @c.DaysSinceJoin day's ago</p>
+    }
+    <a href="/customers">Show All Customers...</a>
+</div>

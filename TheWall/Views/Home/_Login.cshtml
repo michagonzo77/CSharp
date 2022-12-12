@@ -1,17 +1,19 @@
 @model LogUser
-<h2>Login</h2>
+<h2 class="loginTitle mb-5">Log In</h2>
 <form asp-action="LoginUser" asp-controller="Home" method="post">
-    <div class="mb-3">
-        <label asp-for="LEmail">Email</label>
-        <input asp-for="LEmail" class="form-control">
-    </div>
-    <div class="mb-3">
-        <label asp-for="LPassword">Password</label>
-        <input asp-for="LPassword" class="form-control">
-    </div>
-    <input type="submit" value="Login" class="btn btn-info">
-    <div>
-        <span asp-validation-for="LEmail" class="text-danger"></span>
-        <span asp-validation-for="LPassword" class="text-danger"></span>
+    <div class="form-group">
+        <div class="mb-4">
+            <label class="formLabel" asp-for="LEmail">Email</label>
+            <input asp-for="LEmail" class="form-control loginForm form-text">
+        </div>
+        <div class="mb-5">
+            <label asp-for="LPassword">Password</label>
+            <input asp-for="LPassword" class="form-control loginForm">
+        </div>
+        <input type="submit" value="Login" class="btn btn-pink buttonLogin">
+        <div>
+            <span asp-validation-for="LEmail" class="text-danger"></span>
+            <span asp-validation-for="LPassword" class="text-danger"></span>
+        </div>
     </div>
 </form>

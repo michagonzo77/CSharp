@@ -1,0 +1,31 @@
+@model Order
+<form class="d-flex gap-3" asp-action="CreateOrder" asp-controller="Home" method="post">
+    <div class="mb-3">
+        <label asp-for="CustomerId"></label>
+        <select asp-for="CustomerId" class="select-control">
+            @foreach (Customer c in ViewBag.AllCustomers)
+            {
+                <option value="@c.CustomerId">@c.Name</option>
+
+            }
+        </select>
+        <span asp-validation-for="CustomerId" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="ProductId"></label>
+        <select asp-for="ProductId" class="select-control">
+            @foreach (Product c in ViewBag.AllProducts)
+            {
+                <option value="@c.ProductId">@c.Name</option>
+
+            }
+        </select>
+        <span asp-validation-for="ProductId" class="text-danger" value=""></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Quantity"></label>
+        <input asp-for="Quantity">
+        <span asp-validation-for="Quantity" class="text-danger"></span>
+    </div>
+    <input type="submit" value="Order" class="btn btn-success">
+</form>

@@ -2,39 +2,46 @@
     ViewData["Title"] = "Home Page";
 }
 @model User
-<div class="text-center d-flex justify-content-around">
-    <div class="flex-1 m-3">
-        <h2>Register</h2>
-        <form asp-action="CreateUser" asp-controller="Home" method="post">
-            <div class="mb-3">
-                <label asp-for="FirstName"></label>
-                <input asp-for="FirstName" class="form-control">
-                <span asp-validation-for="FirstName" class="text-danger"></span>
-            </div>
-            <div class="mb-3">
-                <label asp-for="LastName"></label>
-                <input asp-for="LastName" class="form-control">
-                <span asp-validation-for="LastName" class="text-danger"></span>
+<div class="text-center d-flex justify-content-around login">
+    <div class="flex-1 registerSide">
+        <h2 class="registerTitle">Register</h2>
+        <form class="loginMax" asp-action="CreateUser" asp-controller="Home" method="post">
+            <div class="d-flex gap-3">
+                <div class="mb-3">
+                    <label asp-for="FirstName">First Name</label>
+                    <input asp-for="FirstName" class="form-control login-form">
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="LastName">Last Name</label>
+                    <input asp-for="LastName" class="form-control login-form">
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
             </div>
             <div class="mb-3">
                 <label asp-for="Email"></label>
                 <input asp-for="Email" class="form-control">
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
-            <div class="mb-3">
-                <label asp-for="Password"></label>
-                <input asp-for="Password" class="form-control">
-                <span asp-validation-for="Password" class="text-danger"></span>
+            <div class="d-flex gap-3">
+                <div class="mb-3">
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" class="form-control login-form">
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="mb-5">
+                    <label asp-for="Confirm">Confirm Password</label>
+                    <input asp-for="Confirm" class="form-control login-form">
+                    <span asp-validation-for="Confirm" class="text-danger"></span>
+                </div>
             </div>
-            <div class="mb-3">
-                <label asp-for="Confirm"></label>
-                <input asp-for="Confirm" class="form-control">
-                <span asp-validation-for="Confirm" class="text-danger"></span>
-            </div>
-            <input type="submit" value="Submit" class="btn btn-info">
+            <input type="submit" value="Register" class="btn btn-pink buttonCenter">
         </form>
     </div>
-    <div class="flex-1 m-3">
+    <div class="flex-1 loginSide">
+        <div class="realLogin">
+
         @await Html.PartialAsync("_Login")
+        </div>
     </div>
 </div>
