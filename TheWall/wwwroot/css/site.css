@@ -115,3 +115,19 @@ body {
 .buttonLogin {
   width: 160px;
 }
+
+.pink-text{
+  color: #F83A95;
+}
+
+.primary-btn {
+  background-color: #D4267A;
+  width: 200px;
+  color: white
+}
+
+.comment-btn {
+  background-color: #766f6f;
+  color: #ffffff;
+  width: 200px;
+}

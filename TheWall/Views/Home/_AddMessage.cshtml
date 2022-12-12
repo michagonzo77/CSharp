@@ -2,8 +2,8 @@
 
 <form asp-action="CreateMessage" asp-controller="Home" method="post">
     <input asp-for="UserId" type="hidden" value="@ViewBag.LoggedInUser.UserId">
-    <label asp-for="MessageText"><h4>Post A Message</h4></label>
+    <label asp-for="MessageText"><h6 class="text-light">Post A Message</h6></label>
     <textarea asp-for="MessageText" class="form-control"></textarea>
     <span asp-validation-for="MessageText" class="text-danger"></span>
-    <input type="submit" value="Write On The Wall" class="btn btn-success mt-2">
+    <input type="submit" value="Post" class="btn primary-btn mt-4">
 </form>

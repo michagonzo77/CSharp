@@ -1,6 +1,6 @@
 @model Comment
 
 <input asp-for="UserId" type="hidden" value="@ViewBag.LoggedInUser.UserId">
-<label asp-for="CommentText"><h4>Post A Comment</h4></label>
+<label asp-for="CommentText"><h6 class="text-light">Post A Comment</h6></label>
 <textarea asp-for="CommentText" class="form-control"></textarea>
 <span asp-validation-for="CommentText" class="text-danger"></span>

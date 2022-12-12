@@ -1,52 +1,68 @@
 @model MyWallModel
-<div class="d-flex justify-content-between align-items-center">
-    <h2>Coding Dojo Wall</h2>
-    <h6>Welcome @ViewBag.LoggedInUser.FirstName</h6>
-    <form asp-action="Logout" asp-controller="Home" method="post">
-        <input type="submit" value="Logout" class="btn btn-danger">
-    </form>
+<div class="d-flex justify-content-between align-items-center mt-5">
+    <h2 class="text-light">Coding Dojo Wall</h2>
+    <div class="d-flex align-items-center gap-5">
+        <h6 class="text-light">Welcome, <span class="pink-text">@ViewBag.LoggedInUser.FirstName
+                @ViewBag.LoggedInUser.LastName.Substring(0,1)</span></h6>
+        <form asp-action="Logout" asp-controller="Home" method="post">
+            <input type="submit" value="Logout" class="btn btn-danger">
+        </form>
+    </div>
 </div>
+<hr class="text-light"></hr>
 <div class="mt-3">
     @await Html.PartialAsync("_AddMessage", Model.Message)
 </div>
 <div>
     @foreach (Message m in Model.AllMessages)
+
     {
-        <div class="border border-solid mb-3 mt-3">
+        <div class="mb-3 mt-3">
             <div class="d-flex gap-2">
-                <h5>@m.User.FirstName @m.User.LastName.Substring(0,1)</h5>
+                <h6 class="pink-text m-2">@m.User.FirstName @m.User.LastName.Substring(0,1)</h6>
                 <p>-</p>
-                <h5>@m.CreatedAt</h5>
+                <h6 class="text-light m-2">@m.CreatedAt</h6>
                 @{
-                    if(m.UserId == ViewBag.LoggedInUser.UserId)
+
+                    if (m.UserId == ViewBag.LoggedInUser.UserId)
+
                     {
                         <form asp-action="DestroyMessage" asp-controller="Home" asp-route-messageId="@m.MessageId" method="post">
                             <input type="submit" value="Delete Message" class="btn btn-danger">
                         </form>
+
                     }
                 }
             </div>
-            <p class="ms-3">@m.MessageText</p>
-            <div class="ms-5 bg-primary text-light">
-                @foreach(Comment c in Model.AllComments)
+            <p class="ms-3 mb-5 text-light">@m.MessageText</p>
+            <div class="ms-5 text-light">
+                @foreach (Comment c in Model.AllComments)
+
                 {
-                    if(c.Message.MessageId == m.MessageId)
+
+                    if (c.Message.MessageId == m.MessageId)
+
                     {
                         <div class="d-flex gap-2 p-3 align-items-center">
                             <h6>@c.User.FirstName @c.User.LastName.Substring(0,1)</h6>
                             <p>-</p>
                             <h6>@c.CreatedAt</h6>
                             @{
-                                if(c.UserId == ViewBag.LoggedInUser.UserId)
+
+                                if (c.UserId == ViewBag.LoggedInUser.UserId)
+
                                 {
                                     <form asp-action="DestroyComment" asp-controller="Home" asp-route-commentId="@c.CommentId" method="post">
                                         <input type="submit" value="Delete Comment" class="btn btn-danger">
                                     </form>
+
                                 }
                             }
                         </div>
-                        <p class="ms-3 p-2">@c.CommentText</p>
+                        <p class="ms-3">@c.CommentText</p>
+
                     }
+
                 }
             </div>
         </div>
@@ -54,40 +70,41 @@
             <form asp-action="CreateComment" asp-controller="Home" method="post">
                 @await Html.PartialAsync("_AddComment", Model.Comment)
                 <input name="MessageId" type="hidden" value="@m.MessageId">
-                <input type="submit" value="Comment" class="btn btn-success mt-2">
+                <input type="submit" value="Comment" class="btn comment-btn mt-2">
             </form>
         </div>
+
     }
 </div>
 
-@* 
-            <form asp-action="CreateComment" asp-controller="Home" method="post">
-                <input asp-for="UserId" type="hidden" value="@ViewBag.LoggedInUser.UserId">
-                <label asp-for="CommentText"><h4>Post A Comment</h4></label>
-                <textarea asp-for="CommentText" class="form-control"></textarea>
-                <span asp-validation-for="CommentText" class="text-danger"></span>
-                <input type="submit" value="Comment" class="btn btn-success mt-2">
-            </form> *@
+@*
+    <form asp-action="CreateComment" asp-controller="Home" method="post">
+    <input asp-for="UserId" type="hidden" value="@ViewBag.LoggedInUser.UserId">
+    <label asp-for="CommentText"><h4>Post A Comment</h4></label>
+    <textarea asp-for="CommentText" class="form-control"></textarea>
+    <span asp-validation-for="CommentText" class="text-danger"></span>
+    <input type="submit" value="Comment" class="btn btn-success mt-2">
+    </form> *@
 
-@* 
-@model Comment
-<div class="d-flex justify-content-between align-items-center">
+@*
+    @model Comment
+    <div class="d-flex justify-content-between align-items-center">
     <h2>Coding Dojo Wall</h2>
     <h6>Welcome @ViewBag.LoggedInUser.FirstName</h6>
-</div>
-<div class="mt-3">
+    </div>
+    <div class="mt-3">
     @await Html.PartialAsync("_AddMessage")
-</div>
-<div>
+    </div>
+    <div>
     @await Html.PartialAsync("_AllMessages")
     <div class="ms-5">
-        <form asp-action="CreateComment" asp-controller="Home" method="post">
-            <input asp-for="UserId" type="hidden" value="@ViewBag.LoggedInUser.UserId">
-            <label asp-for="CommentText"><h4>Post A Comment</h4></label>
-            <textarea asp-for="CommentText" class="form-control"></textarea>
-            <span asp-validation-for="CommentText" class="text-danger"></span>
-            <input type="submit" value="Comment" class="btn btn-success mt-2">
-        </form>
+    <form asp-action="CreateComment" asp-controller="Home" method="post">
+    <input asp-for="UserId" type="hidden" value="@ViewBag.LoggedInUser.UserId">
+    <label asp-for="CommentText"><h4>Post A Comment</h4></label>
+    <textarea asp-for="CommentText" class="form-control"></textarea>
+    <span asp-validation-for="CommentText" class="text-danger"></span>
+    <input type="submit" value="Comment" class="btn btn-success mt-2">
+    </form>
     </div>
-    
-</div> *@
+
+    </div> *@
