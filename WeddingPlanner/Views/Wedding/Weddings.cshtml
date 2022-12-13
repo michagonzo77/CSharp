@@ -34,7 +34,7 @@
                     @* if(!w.Guests.Any(r => r.UserId == ViewBag.LoggedInUser.UserId)) *@
                     if (!w.HasBeenRespondedToBy(ViewBag.LoggedInUser.UserId))
                     {
-                        <form asp-action="RSVPWedding" asp-controller="Home" method="post">
+                        <form asp-action="RSVPWedding" asp-controller="Wedding" method="post">
                             <input asp-for="WeddingId" type="hidden" value="@w.WeddingId">
                             <input asp-for="UserId" type="hidden" value="@ViewBag.LoggedInUser.UserId">
                             <input type="submit" value="RSVP" class="btn btn-success">
@@ -42,7 +42,7 @@
                     }
                     else
                     {
-                        <form asp-action="UnRSVPWedding" asp-controller="Home" asp-route-weddingId="@w.WeddingId" method="post">
+                        <form asp-action="UnRSVPWedding" asp-controller="Wedding" asp-route-weddingId="@w.WeddingId" method="post">
                             <input type="submit" value="UnRSVP" class="btn btn-danger">
                         </form>
                     }
@@ -50,7 +50,7 @@
                 @{
                     if (w.UserId == ViewBag.LoggedInUser.UserId)
                     {
-                        <form asp-action="DestroyWedding" asp-controller="Home" asp-route-weddingId="@w.WeddingId" method="post">
+                        <form asp-action="DestroyWedding" asp-controller="Wedding" asp-route-weddingId="@w.WeddingId" method="post">
                             <input type="submit" value="Delete" class="btn btn-danger">
                         </form>
                     }

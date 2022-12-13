@@ -14,6 +14,7 @@ public class Order
     public int CraftId {get;set;}
     public Craft? Craft {get;set;}
 
+    [Required]
     public int QuantityOrdered {get;set;}
 
     public DateTime CreatedAt { get; set; } = DateTime.Now;

@@ -1,1 +1,9 @@
-<h1>Dashboard</h1>
+@model MyViewModel
+
+<h1>Welcome @Model.User.Username</h1>
+<h2>Seller Stats</h2>
+<h3>You have sold @Model.TotalSold items</h3>
+<h3>You have made @Model.MoneyMade.ToString("C") so far</h3>
+<br>
+<h2>Buyer Stats</h2>
+<h3>You've bought XXX Items</h3>

@@ -1,0 +1,14 @@
+@model Order
+<form asp-action="CreateOrder" asp-controller="Home" method="post">
+    <div class="mb-3">
+        <label asp-for="QuantityOrdered"></label>
+        <select asp-for="QuantityOrdered" class="form-select">
+            @for(int i = 1; i <= ViewBag.OneCraft.Quantity; i++)
+            {
+                <option value="@i">@i</option>
+            }
+        </select>
+    </div>
+    <input type="hidden" asp-for="CraftId" value="@Model.CraftId">
+    <input type="submit" value="Buy Now" class="btn btn-success">
+</form>

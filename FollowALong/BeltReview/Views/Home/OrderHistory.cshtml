@@ -1,0 +1,48 @@
+@model MyViewModel
+<h2>Order History</h2>
+<h3>Your Sales</h3>
+<table class="table table-striped">
+    <tr>
+        <th>Craft Ordered</th>
+        <th>Quantity</th>
+        <th>Buyer</th>
+        <th>Total</th>
+        <th>Order Date</th>
+    </tr>
+    @foreach(Order o in Model.YourSales)
+    {
+        <tr>
+            <td>@o.Craft.Title</td>
+            <td>@o.QuantityOrdered</td>
+            <td>@o.User.Username</td>
+            @{
+                double total = (double)o.Craft.Price * o.QuantityOrdered;
+            }
+            <td>@total.ToString("C")/td>
+            <td>@o.CreatedAt.ToString("MM/dd/yyyy")</td>
+        </tr>
+    }
+</table>
+<h3>Your Orders</h3>
+<table class="table table-striped">
+    <tr>
+        <th>Craft Ordered</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th>Seller</th>
+        <th>Order Date</th>
+    </tr>
+    @foreach(Order o in Model.YourOrders)
+    {
+        <tr>
+            <td>@o.Craft.Title</td>
+            <td>@o.QuantityOrdered</td>
+            @{
+                double total = (double)o.Craft.Price * o.QuantityOrdered;
+            }
+            <td>@total.ToString("C")/td>
+            <td>@o.Craft.Creator.Username</td>
+            <td>@o.CreatedAt.ToString("MM/dd/yyyy")</td>
+        </tr>
+    }
+</table>

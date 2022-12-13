@@ -1,8 +1,9 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
 }
 
-<div class="text-center d-flex justify-content-around">
+<div class="text-center d-flex justify-content-around mt-5">
     <div>
         <h2>Register</h2>
         @await Html.PartialAsync("_Register")

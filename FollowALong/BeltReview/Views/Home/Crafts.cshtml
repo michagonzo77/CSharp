@@ -1,0 +1,22 @@
+@model List<Craft>
+<h2>All Crafts</h2>
+<div class="d-flex flex-wrap gap-2">
+    @foreach (Craft c in Model)
+    {
+        <div class="border p-2 m-3 shadow rounded">
+            <img class="imageSize" src="@c.Image" alt="@c.Title">
+            <div class="d-flex align-items-center">
+                <h4><a href="/crafts/@c.CraftId">@c.Title</a></h4>
+                @if(c.UserId == Context.Session.GetInt32("UserId"))
+                {
+                    <form aps-action="DestroyCraft" asp-controller="Home" method="post" class="ps-2" asp-route-craftId="@c.CraftId">
+                        <input type="submit" value="X" class="btn btn-danger">
+                    </form>
+                }
+            </div>
+            <h5>By: @c.Creator.Username</h5>
+            <h5>@c.Price.ToString("C")</h5>
+            <h5>Only @c.Quantity in stock!</h5>
+        </div>
+    }
+</div>

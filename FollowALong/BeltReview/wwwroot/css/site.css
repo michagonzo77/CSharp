@@ -16,3 +16,12 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.imageSize {
+  width: 200px;
+  height: 260px;
+}
+
+.oneImg {
+  width: 25%;
+}

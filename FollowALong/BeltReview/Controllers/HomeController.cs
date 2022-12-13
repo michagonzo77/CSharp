@@ -71,16 +71,106 @@ public class HomeController : Controller
         }
     }
 
-    [SesssionCheck]
-    [HttpGet("dashboard")]
+    [SessionCheck]
+    [HttpGet("users/dashboard")]
     public IActionResult Dashboard()
+    {
+        MyViewModel MyModel = new MyViewModel
+        {
+            User = _context.Users.Include(a => a.OrdersPlaced).ThenInclude(a => a.Craft).FirstOrDefault(a => a.UserId == (int)HttpContext.Session.GetInt32("UserId")),
+            TotalSold = _context.Orders.Include(a => a.Craft).Where(s => s.Craft.UserId == (int)HttpContext.Session.GetInt32("UserId")).Sum(a => a.QuantityOrdered),
+            MoneyMade = _context.Orders.Include(a => a.Craft).Where(s => s.Craft.UserId == (int)HttpContext.Session.GetInt32("UserId")).Sum(s => s.Craft.Price * s.QuantityOrdered),
+            CraftsBought = _context.Orders.Where(a => a.UserId == (int)HttpContext.Session.GetInt32("UserId")).Sum(a => a.QuantityOrdered)
+        };
+        return View(MyModel);
+    }
+
+    [SessionCheck]
+    [HttpGet("crafts")]
+    public IActionResult Crafts()
+    {
+        List<Craft> AllCrafts = _context.Crafts.Include(a => a.Creator).ToList();
+        return View(AllCrafts);
+    }
+
+    [SessionCheck]
+    [HttpGet("crafts/new")]
+    public IActionResult NewCraft()
     {
         return View();
     }
 
-    public IActionResult Privacy()
+    [SessionCheck]
+    [HttpPost("crafts/create")]
+    public IActionResult CreateCraft(Craft newCraft)
     {
-        return View();
+        if(ModelState.IsValid)
+        {
+            newCraft.UserId = (int)HttpContext.Session.GetInt32("UserId");
+            _context.Add(newCraft);
+            _context.SaveChanges();
+            return RedirectToAction("Crafts");
+        } else {
+            return View("NewCraft");
+        }
+    }
+
+    [SessionCheck]
+    [HttpGet("crafts/{craftId}")]
+    public IActionResult OneCraft(int craftId)
+    {
+        Craft One = _context.Crafts.Include(s => s.Creator).FirstOrDefault(a => a.CraftId == craftId);
+        ViewBag.OneCraft = _context.Crafts.FirstOrDefault(a => a.CraftId == craftId);
+        return View(One);
+    }
+
+    [SessionCheck]
+    [HttpPost("orders/create")]
+    public IActionResult CreateOrder(Order newOrder)
+    {
+        if(ModelState.IsValid)
+        {
+            newOrder.UserId = (int)HttpContext.Session.GetInt32("UserId");
+            Craft? CraftOrdered = _context.Crafts.FirstOrDefault(a => a.CraftId == newOrder.CraftId);
+            CraftOrdered.Quantity -= newOrder.QuantityOrdered;
+            _context.Add(newOrder);
+            _context.SaveChanges();
+            return RedirectToAction("Dashboard");
+        } else {
+            return View("OneCraft", newOrder.CraftId);
+        }
+    }
+
+    [SessionCheck]
+    [HttpGet("orderhistory")]
+    public IActionResult OrderHistory()
+    {
+        MyViewModel MyModel = new MyViewModel
+        {
+            YourSales = _context.Orders.Include(s => s.User).Include(a => a.Craft).Where(s => s.Craft.UserId == (int)HttpContext.Session.GetInt32("UserId")).ToList(),
+            YourOrders = _context.Orders.Include(s => s.Craft).ThenInclude(a => a.Creator).Where(a => a.UserId == (int)HttpContext.Session.GetInt32("UserId")).ToList()
+        };
+        return View(MyModel);
+    }
+
+    [HttpPost("logout")]
+    public IActionResult Logout()
+    {
+        HttpContext.Session.Clear();
+        return RedirectToAction("Index");
+    }
+
+    [HttpPost("crafts/{craftId}/destroy")]
+    public IActionResult DestroyCraft(int craftId)
+    {
+        Craft? CraftToDestroy = _context.Crafts.SingleOrDefault(a => a.CraftId == craftId);
+        if(CraftToDestroy == null)
+        {
+            return RedirectToAction("Crafts");
+        }
+        _context.Remove(CraftToDestroy);
+        _context.SaveChanges();
+        return RedirectToAction("Crafts");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -89,7 +179,7 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 
-    public class SesssionCheckAttribute : ActionFilterAttribute
+    public class SessionCheckAttribute : ActionFilterAttribute
     {
         public override void OnActionExecuting(ActionExecutingContext context)
         {

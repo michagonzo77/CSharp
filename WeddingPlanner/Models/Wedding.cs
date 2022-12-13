@@ -10,6 +10,7 @@ public class Wedding
     [Required]
     public string WedderTwo {get;set;}
     [Required]
+    [DataType(DataType.Date)]
     public DateTime WeddingDate {get;set;}
     [Required]
     public string Address {get;set;}
@@ -29,5 +30,4 @@ public class Wedding
         }
         return false;
     }
-
 }

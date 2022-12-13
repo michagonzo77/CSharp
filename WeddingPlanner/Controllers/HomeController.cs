@@ -2,9 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using WeddingPlanner.Models;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Filters;
-
 namespace WeddingPlanner.Controllers;
 
 public class HomeController : Controller
@@ -34,7 +32,7 @@ public class HomeController : Controller
             _context.Add(newUser);
             _context.SaveChanges();
             HttpContext.Session.SetInt32("UserId", newUser.UserId);
-            return RedirectToAction("Weddings");
+            return RedirectToAction("Weddings", "Wedding");
         } else {
             return View("Index");
         }
@@ -64,81 +62,10 @@ public class HomeController : Controller
             } else {
                 // Set session and head to Weddings
                 HttpContext.Session.SetInt32("UserId", userInDb.UserId);
-                return RedirectToAction("Weddings");
+                return RedirectToAction("Weddings", "Wedding");
             }
         } else {
             return View("Index");
-        }
-    }
-
-    [SesssionCheck]
-    [HttpGet("weddings")]
-    public IActionResult Weddings()
-    {
-        ShowWeddingViewModel MyModel = new ShowWeddingViewModel
-        {
-            AllWeddings = _context.Weddings
-                                            .Include(a => a.Guests)
-                                            .ToList(),
-            PlannedWeddings = _context.Reservations
-                                            .Include(a => a.Wedding)
-                                            .ToList()
-        };
-        ViewBag.AllWeddings = _context.Weddings.Include(a => a.Guests).ToList();
-        ViewBag.LoggedInUser = _context.Users.FirstOrDefault(a => a.UserId == HttpContext.Session.GetInt32("UserId"));
-        ViewBag.RSVPS = _context.Reservations.Include(w => w.Wedding).Where(u => u.UserId == HttpContext.Session.GetInt32("UserId"));
-        return View();
-    }
-
-    [SesssionCheck]
-    [HttpGet("weddings/new")]
-    public IActionResult NewWedding()
-    {
-        // int? TerrancesDong = HttpContext.Session.GetInt32("UserId");
-        // ViewBag.Terrance = _context.Users.FirstOrDefault(u => u.UserId == TerrancesDong);
-        ViewBag.LoggedInUser = _context.Users.FirstOrDefault(a => a.UserId == HttpContext.Session.GetInt32("UserId"));
-        return View();
-    }
-
-    [HttpPost("weddings/create")]
-    public IActionResult CreateWedding(Wedding newWedding)
-    {
-        if(ModelState.IsValid)
-        {
-            _context.Add(newWedding);
-            _context.SaveChanges();
-            return RedirectToAction("Weddings");
-        } else {
-            return View("NewWedding");
-        }
-    }
-
-    [SesssionCheck]
-    [HttpGet("weddings/{weddingId}")]
-    public IActionResult OneWedding(int weddingId)
-    {
-        ShowWeddingViewModel MyModel = new ShowWeddingViewModel
-        {
-            Wedding = _context.Weddings
-                                        .Include(a => a.Guests)
-                                        .ThenInclude(u => u.User)
-                                        .FirstOrDefault(a => a.WeddingId == weddingId),
-        };
-        ViewBag.LoggedInUser = _context.Users.FirstOrDefault(a => a.UserId == HttpContext.Session.GetInt32("UserId"));
-        return View(MyModel);
-    }
-
-    [HttpPost("weddings/rsvp")]
-    public IActionResult RSVPWedding(int weddingId, Reservation newRSVP)
-    {
-        if(ModelState.IsValid)
-        {
-            _context.Add(newRSVP);
-            _context.SaveChanges();
-            // return RedirectToAction("OneWedding", new {weddingId = newRSVP.WeddingId});
-            return RedirectToAction("Weddings");
-        } else {
-            return View("Weddings");
         }
     }
 
@@ -149,30 +76,6 @@ public class HomeController : Controller
         return RedirectToAction("Index");
     }
 
-    [HttpPost("weddings/{weddingId}/destroy")]
-    public IActionResult DestroyWedding(int weddingId)
-    {
-        Wedding? WeddingToDestroy = _context.Weddings.SingleOrDefault(a => a.WeddingId == weddingId);
-        _context.Weddings.Remove(WeddingToDestroy);
-        _context.SaveChanges();
-        return RedirectToAction("Weddings");
-    }
-
-    [HttpPost("reservations/{weddingId}/destroy")]
-    public IActionResult UnRSVPWedding(int weddingId)
-    {
-        if(ModelState.IsValid)
-        {
-        Reservation? RSVPToDestroy = _context.Reservations.Where(a => a.UserId == HttpContext.Session.GetInt32("UserId")).SingleOrDefault(a => a.WeddingId == weddingId);
-        ViewBag.LoggedInUser = _context.Users.FirstOrDefault(a => a.UserId == HttpContext.Session.GetInt32("UserId"));
-        _context.Reservations.Remove(RSVPToDestroy);
-        _context.SaveChanges();
-        return RedirectToAction("Weddings");
-        } else {
-            return View("Weddings");
-        }
-    }
-
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
@@ -180,7 +83,6 @@ public class HomeController : Controller
     }
 
 }
-
 public class SesssionCheckAttribute : ActionFilterAttribute
 {
     public override void OnActionExecuting(ActionExecutingContext context)
