@@ -2,7 +2,7 @@
 <div class="d-flex justify-content-between">
 Hi, @ViewBag.LoggedInUser.FirstName
 <ul class="d-flex list-unstyled gap-5">
-    <li><a href="/">Home</a></li>
+    <li><a href="/weddings">Home</a></li>
     |
     <li><a href="/weddings/new">Plan a Wedding</a></li>
     |
@@ -15,9 +15,9 @@ Hi, @ViewBag.LoggedInUser.FirstName
 </div>
 <hr></hr>
 <h1>@Model.Wedding.WedderOne's & @Model.Wedding.WedderTwo's Wedding</h1>
-<h3>@Model.Wedding.WeddingDate</h3>
+<h3>@Model.Wedding.WeddingDate.ToString("MM/dd/yyyy")</h3>
 <h3>Guests</h3>
-<div class="border border-solid">
+<div class="border border-solid w-25 mt-2 shadow rounded text-center p-2">
     @foreach(Reservation guest in Model.Wedding.Guests)
     {
         <p>@guest.User.FirstName @guest.User.LastName</p>

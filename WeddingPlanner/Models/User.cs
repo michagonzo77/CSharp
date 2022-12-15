@@ -52,3 +52,18 @@ public class UniqueEmailAttribute : ValidationAttribute
         }
     }
 }
+
+
+// // include this using statement at the top of your controller file
+// using Microsoft.AspNetCore.Mvc.ModelBinding;
+
+// // this snippet can go in any of your create methods
+// foreach (KeyValuePair<string, ModelStateEntry> error in ModelState)
+// {
+//     Console.WriteLine("********** ERROR ********");
+//     Console.WriteLine($"Field: {error.Key}");
+//     foreach (ModelError err in error.Value.Errors)
+//     {
+//         Console.WriteLine($"Error: {err.ErrorMessage}");
+//     }
+// }

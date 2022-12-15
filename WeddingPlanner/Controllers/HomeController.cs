@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using WeddingPlanner.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Filters;
+
 namespace WeddingPlanner.Controllers;
 
 public class HomeController : Controller

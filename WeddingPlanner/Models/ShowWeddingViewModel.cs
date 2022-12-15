@@ -5,7 +5,7 @@ public class ShowWeddingViewModel
 {
     public Wedding Wedding {get;set;}
     public List<Wedding> AllWeddings {get;set;}
-    public List<Reservation> PlannedWeddings {get;set;}
-    public List<Reservation> Guests {get;set;}
-    public User User {get;set;}
+    public User OneUser {get;set;}
+    public List<Reservation> RSVPS {get;set;}
+    public Reservation Reservation {get;set;}
 }

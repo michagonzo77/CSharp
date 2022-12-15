@@ -1,0 +1,15 @@
+C:\Users\Coding Dojo\Desktop\csharp\BillForFunction\bin\Debug\net6.0\BillForFunction.exe
+C:\Users\Coding Dojo\Desktop\csharp\BillForFunction\bin\Debug\net6.0\BillForFunction.deps.json
+C:\Users\Coding Dojo\Desktop\csharp\BillForFunction\bin\Debug\net6.0\BillForFunction.runtimeconfig.json
+C:\Users\Coding Dojo\Desktop\csharp\BillForFunction\bin\Debug\net6.0\BillForFunction.dll
+C:\Users\Coding Dojo\Desktop\csharp\BillForFunction\bin\Debug\net6.0\BillForFunction.pdb
+C:\Users\Coding Dojo\Desktop\csharp\BillForFunction\obj\Debug\net6.0\BillForFunction.csproj.AssemblyReference.cache
+C:\Users\Coding Dojo\Desktop\csharp\BillForFunction\obj\Debug\net6.0\BillForFunction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coding Dojo\Desktop\csharp\BillForFunction\obj\Debug\net6.0\BillForFunction.AssemblyInfoInputs.cache
+C:\Users\Coding Dojo\Desktop\csharp\BillForFunction\obj\Debug\net6.0\BillForFunction.AssemblyInfo.cs
+C:\Users\Coding Dojo\Desktop\csharp\BillForFunction\obj\Debug\net6.0\BillForFunction.csproj.CoreCompileInputs.cache
+C:\Users\Coding Dojo\Desktop\csharp\BillForFunction\obj\Debug\net6.0\BillForFunction.dll
+C:\Users\Coding Dojo\Desktop\csharp\BillForFunction\obj\Debug\net6.0\refint\BillForFunction.dll
+C:\Users\Coding Dojo\Desktop\csharp\BillForFunction\obj\Debug\net6.0\BillForFunction.pdb
+C:\Users\Coding Dojo\Desktop\csharp\BillForFunction\obj\Debug\net6.0\BillForFunction.genruntimeconfig.cache
+C:\Users\Coding Dojo\Desktop\csharp\BillForFunction\obj\Debug\net6.0\ref\BillForFunction.dll

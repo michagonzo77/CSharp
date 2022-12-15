@@ -7,6 +7,4 @@ public class MyWallModel
     public List<Message> AllMessages {get;set;}
     public Comment Comment {get;set;}
     public List<Comment> AllComments {get;set;}
-    public User User {get;set;}
-    public List<User> AllUsers {get;set;}
 }

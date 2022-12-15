@@ -32,15 +32,18 @@
             <div class="mb-3">
                 <label asp-for="ChefId">Chef's Name</label>
                 <select class="form-control" asp-for="ChefId">
+                    <option selected disabled value=""></option>
                     @foreach (Chef c in ViewBag.AllChefs)
                     {
                         <option value="@c.ChefId">@c.FirstName @c.LastName</option>
                     }
                 </select>
+                <span asp-validation-for="ChefId" class="text-danger"></span>
             </div>
             <div class="mb-3">
                 <label asp-for="Tastiness"></label>
                 <select asp-for="Tastiness" class="form-control">
+                    <option selected disabled value="">How Tasty Was It?</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
